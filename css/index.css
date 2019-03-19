@@ -133,10 +133,13 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 .container {
   width: 90%;
   margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
 }
 .flex-container {
   display: flex;
@@ -164,5 +167,21 @@ body {
   background: lightgray;
 }
 .rounded {
+  border-radius: 5px;
+}
+#header-div {
+  padding: 50px 20px;
+}
+#main-heading {
+  font-size: 5rem;
+}
+#motto {
+  font-size: 2rem;
+}
+#food-button {
+  background: gray;
+  color: white;
+  border: 0;
+  padding: 10px;
   border-radius: 5px;
 }
