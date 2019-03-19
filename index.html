@@ -2,15 +2,15 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>My Resume</title>
+    <title>My Resume</title>
+    <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
 
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -25,52 +25,55 @@
             <div class="shaded rounded" id="header-div">
                 <h1 id="main-heading">Christian MacDonald - Full Stack Web Developer</h1>
                 <h3 id="motto">Quality Above All Else</h3>
+                <hr />
                 <p>I am an aspiring Software Engineer, but I also build websites. Let me know if you have some work for me! Please, I need money for food... Help.</p>
                 <button id="food-button">Food Button</button>
             </div>
         </header>
-        <main>
+        <main id="index-main">
             <div>
                 <div>
-                    <h2>Feed a Starving Web Developer Boi</h2>
-                    <p>Velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst.</p>
+                    <h2 class="main-content-heading">Feed a Starving Web Developer Boi</h2>
+                    <p class="main-content">Velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu diam hendrerit at mattis purus dignissim vivamus mauris tellus, fringilla vel dapibus a, blandit quis erat vivamus elementum aliquam luctus etiam fringilla pretium sem vitae sodales mauris id nulla est praesent laoreet, metus vel auctor aliquam, eros purus vulputate leo, eget consequat neque quam id tellus duis ultricies tempor tortor, vitae dignissim ligula mattis nec in hac habitasse platea dictumst.</p>
                 </div>
                 <div>
-                    <h2>Stuff I'm Good At</h2>
-                    <ul>
+                    <h2 id="skill-list-heading">Stuff I'm Good At</h2>
+                    <ul id="skill-list">
                         <li>Rubik's Cubes</li>
                         <li>Breathing</li>
                         <li>Playing Video Games</li>
-                        <li>Getting Inordinately Pissed Off At Minor Inconveniences</li>
+                        <li>Getting Inordinately Annoyed At Minor Inconveniences</li>
                         <li>Sudoku</li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <h2>Work History</h2>
-                <table>
-                    <tr>
-                        <th>Years</th>
-                        <th>Company</th>
-                        <th>Title</th>
-                        <th>Tech Used</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Lake Compounce</td>
-                        <td>Rides Operator</td>
-                        <td>The Green Button Labeled "Start"</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Carling Technologies, Inc.</td>
-                        <td>Non-descript Engineering Intern</td>
-                        <td>Literally Just Excel</td>
-                    </tr>
-                </table>
-            </div>
+            <table id="work-history">
+                <caption id="work-history-heading">Work History</caption>
+                <tr>
+                    <th>Years</th>
+                    <th>Company</th>
+                    <th>Title</th>
+                    <th>Tech Used</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lake Compounce</td>
+                    <td>Rides Operator</td>
+                    <td>The Green Button Labeled "Start"</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Carling Technologies, Inc.</td>
+                    <td>Non-descript Engineering Intern</td>
+                    <td>Literally Just Excel</td>
+                </tr>
+            </table>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            Contact me at chrismacd412@gmail.com!
+            <br />
+            Copyright Christian MacDonald 2018
+        </footer>
     </div>
 </body>
 </html>

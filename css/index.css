@@ -127,6 +127,12 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Aguafina Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aguafina Script Regular'), local('AguafinaScript-Regular'), url(https://fonts.gstatic.com/s/aguafinascript/v7/If2QXTv_ZzSxGIO30LemWEOmt1b3rcQt.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
@@ -141,47 +147,162 @@ body {
   font-size: 1.6rem;
   font-family: Arial, sans-serif;
 }
-.flex-container {
+.container .flex-container {
   display: flex;
 }
-.flex-end-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.main-nav {
+.container .flex-end-container {
   display: flex;
   justify-content: flex-end;
 }
-.main-nav a {
+.container .flex-center-container {
+  display: flex;
+  justify-content: center;
+}
+.container .flex-column-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+.container .main-nav a {
   margin: 10px 20px;
   color: black;
   text-decoration: none;
 }
-.main-nav a:first-child {
+.container .main-nav a:first-child {
   margin-left: 0;
 }
-.main-nav a:last-child {
+.container .main-nav a:last-child {
   margin-right: 0;
 }
-.shaded {
+.container .main-nav a:hover {
+  color: gray;
+}
+@media (max-width: 500px) {
+  .container .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container .lightly-shaded {
+  background: #eee;
+}
+.container .shaded {
   background: lightgray;
 }
-.rounded {
+.container .heavily-shaded {
+  background: gray;
+}
+.container .rounded {
   border-radius: 5px;
 }
-#header-div {
+.container #header-div {
   padding: 50px 20px;
 }
-#main-heading {
+.container #header-div p {
+  margin: 20px 0;
+}
+.container #main-heading {
   font-size: 5rem;
 }
-#motto {
+.container #motto {
   font-size: 2rem;
+  margin: 20px 0;
+  font-family: "Aguafina Script";
 }
-#food-button {
+.container #food-button {
   background: gray;
   color: white;
   border: 0;
   padding: 10px;
+  margin: 10px 0;
   border-radius: 5px;
+}
+.container #index-main {
+  padding: 20px 0;
+}
+.container #index-main div {
+  display: flex;
+}
+.container #index-main div div {
+  display: block;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container #index-main div div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  .container #index-main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .half-width {
+  width: 50%;
+}
+.container .full-width {
+  width: 100%;
+}
+.container .main-content-heading {
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+.container .main-content {
+  line-height: 1.5;
+  font-size: 2rem;
+}
+.container #skill-list-heading {
+  font-size: 2.5rem;
+  margin: 5px 0;
+}
+.container #skill-list {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.container #skill-list li {
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+.container #skill-list li:last-child {
+  border-bottom: 0;
+}
+.container #work-history {
+  width: 100%;
+  margin: 20px 0;
+}
+.container #work-history th {
+  text-align: left;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+.container #work-history tr {
+  border-top: 1px solid lightgray;
+}
+.container #work-history tr:nth-child(even) {
+  background: #eee;
+}
+.container #work-history tr:first-child {
+  border-bottom: 1px solid lightgray;
+}
+.container #work-history tr td {
+  padding: 10px 0;
+}
+.container #work-history-heading {
+  font-size: 2.5rem;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+.container .footer {
+  text-align: center;
+  color: white;
+  padding: 20px 0 80px 0;
+  background: gray;
 }
