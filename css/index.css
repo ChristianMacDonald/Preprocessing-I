@@ -134,3 +134,35 @@ html,
 body {
   height: 100%;
 }
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+}
+.flex-end-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.main-nav a {
+  margin: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+.main-nav a:first-child {
+  margin-left: 0;
+}
+.main-nav a:last-child {
+  margin-right: 0;
+}
+.shaded {
+  background: lightgray;
+}
+.rounded {
+  border-radius: 5px;
+}
